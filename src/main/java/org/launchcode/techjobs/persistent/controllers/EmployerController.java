@@ -50,8 +50,8 @@ public class EmployerController {
             Employer employer = (Employer) optEmployer.get();
             model.addAttribute("employer", employer);
             return "employers/view";
-        } else {
-            return "redirect:../";
+        }
+        return "redirect:../";
         }
     }
-}
+

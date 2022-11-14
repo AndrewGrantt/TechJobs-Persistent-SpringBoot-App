@@ -401,7 +401,7 @@ public class TestTaskTwo extends AbstractTest {
         Method saveMethod = EmployerRepository.class.getMethod("save", Object.class);
 
         Employer employer = new Employer();
-        employer.setLocation();
+        employer.setLocation("St.Louis City");
         employer.setName("LaunchCode");
 
         new Expectations() {{

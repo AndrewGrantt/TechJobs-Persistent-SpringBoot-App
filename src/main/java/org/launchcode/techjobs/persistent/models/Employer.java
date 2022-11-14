@@ -5,6 +5,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import javax.xml.stream.Location;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,8 @@ public class Employer extends AbstractEntity {
     }
 
 
-    public void setLocation() {
+    public void setLocation(String location) {
+        this.location=location;
     }
     public List<Job> getJobs() {
         return jobs;
